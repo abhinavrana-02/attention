@@ -14,7 +14,7 @@ if uploaded_file is not None:
     test_df = pd.read_csv(uploaded_file)
 
     # Load the trained model
-    model = joblib.load("D:/eyegaze/attention_model.pkl")  # Update path if needed
+    model = joblib.load("attention_model.pkl")  # Update path if needed
 
     # Select the required features
     features = ['Velocity', 'LPD', 'RPD', 'HRV', 'GSR']
